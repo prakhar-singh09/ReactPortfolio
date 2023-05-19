@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/profile.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -10,10 +10,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["Web Developer", "Android Developer", "Student"];
   const period = 1000;
 
   const tick = useCallback(() => {
+    const toRotate = ["Web Developer", "Android Developer", "Student"];
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -23,7 +23,7 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(prevDelta => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -31,10 +31,10 @@ export const Banner = () => {
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
+      setLoopNum(prevLoopNum => prevLoopNum + 1);
       setDelta(500);
     }
-  }, [isDeleting, loopNum, text, toRotate]);
+  }, [isDeleting, loopNum, text]);
 
   useEffect(() => {
     let ticker = setInterval(tick, delta);
@@ -58,14 +58,14 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="500"
-                      data-rotate='["Android Developer", "Web Developer", "Student" ]'
+                      data-rotate='["Android Developer", "Web Developer", "Student"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
                     Hi, I am Prakhar Singh. I'm a pre-final B.Tech student at the GL Bajaj Institute of Technology & Management.
-                    My area of skills are: Android development using Flutter, Website making using HTML, CSS, Javascript, ReactJS and Data Structures & Algorithms with a primary language as C++17.
+                    My area of skills are: Android development using Flutter, Website making using HTML, CSS, JavaScript, ReactJS, and Data Structures & Algorithms with a primary language as C++17.
                   </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>
