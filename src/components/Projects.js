@@ -27,7 +27,7 @@ export const Projects = () => {
     {
       description: "Portfolio Website Using HTML/CSS",
       imgUrl: projImg2,
-      link: "https://intensifyprakhar.netlify.app/",
+      link: "https://intensifyprakharold.netlify.app/",
 
     },
     {
