@@ -13,13 +13,11 @@ import dbms from "../assets/img/dbms.png";
 import cn from "../assets/img/computerNetworks.png";
 import OS from "../assets/img/OS.png";
 
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 export const Projects = () => {
-
   const projects = [
     {
-      
       description: "Calculator Android App",
       imgUrl: projImg1,
       link: "https://github.com/intensifyprakhar/Calculator-Using-Java-",
@@ -28,7 +26,6 @@ export const Projects = () => {
       description: "Portfolio Website Using HTML/CSS",
       imgUrl: projImg2,
       link: "https://intensifyprakharold.netlify.app/",
-
     },
     {
       description: "More Projects",
@@ -37,9 +34,7 @@ export const Projects = () => {
     },
   ];
 
-  
   const codingProfiles = [
-   
     {
       description: "CodeChef",
       imgUrl: CodeChef,
@@ -57,98 +52,69 @@ export const Projects = () => {
     },
   ];
 
-  const Course = [
-   
-    {
-      description: "DBMS",
-      imgUrl: dbms,
-    
-    },
-    {
-      description: "Operating System",
-      imgUrl: OS,
-    
-    },
-    {
-      description: "Coumputer Networks",
-      imgUrl: cn,
-      
-    },
-  ];
-
   return (
     <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Portfolio</h2>
-                <p>I show you to all the big and small Skills I have done so far</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Projects</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Coding Profiles</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Course Work</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                    <Row>
-                        {
-                          codingProfiles.map((profile, index) => {
-                            return (
-                              <CodingCard  
-                                key={index}
-                                {...profile}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                    <Row>
-                        {
-                          Course.map((course, index) => {
-                            return (
-                              <CourseCard
-                                key={index}
-                                {...course}
-                                />
-                            )
-                          })
-                        }
-                      </Row>           
-                   </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h2>Portfolio</h2>
+                  <p>
+                    I show you to all the big and small Skills I have done so
+                    far
+                  </p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav
+                      variant="pills"
+                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      id="pills-tab"
+                    >
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Coding Profiles</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content
+                      id="slideInUp"
+                      className={
+                        isVisible ? "animate__animated animate__slideInUp" : ""
+                      }
+                    >
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {codingProfiles.map((profile, index) => {
+                            return <CodingCard key={index} {...profile} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="Background"></img>
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="Background"
+      ></img>
     </section>
-  )
-}
+  );
+};
