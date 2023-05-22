@@ -10,7 +10,7 @@ import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
 import hackerrank from "../assets/img/hackerrank.png";
 import dbms from "../assets/img/dbms.png";
-import cn from "../assets/img/computerNetworks.png";
+import cn from "../assets/img/cn.png";
 import OS from "../assets/img/OS.png";
 
 import 'animate.css';
