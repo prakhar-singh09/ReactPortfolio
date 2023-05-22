@@ -9,6 +9,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
 import hackerrank from "../assets/img/hackerrank.png";
+import dbms from "../assets/img/dbms.png";
+import OS from "../assets/img/OS.png";
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
