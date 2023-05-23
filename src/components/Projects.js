@@ -51,7 +51,7 @@ export const Projects = () => {
     },
   ];
 
-  const Course = [
+  let Course = [
     {
       description: "DBMS",
       imgUrl: dbms,
