@@ -66,6 +66,8 @@ export const Projects = () => {
     },
   ];
 
+  Course = null;
+
   return (
     <section className="project" id="project">
       <Container>
