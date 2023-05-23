@@ -11,8 +11,8 @@ import hackerrank from "../assets/img/hackerrank.png";
 import dbms from "../assets/img/dbms.png";
 import cn from "../assets/img/computerNetworks.png";
 import OS from "../assets/img/OS.png";
-
 import "animate.css";
+
 import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
