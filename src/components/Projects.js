@@ -8,6 +8,9 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
 import hackerrank from "../assets/img/hackerrank.png";
+import dbms from "../assets/img/dbms.png";
+import cn from "../assets/img/computerNetworks.png";
+import OS from "../assets/img/OS.png";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -45,6 +48,21 @@ export const Projects = () => {
       description: "HackerRank",
       imgUrl: hackerrank,
       link: "https://www.hackerrank.com/singhprakhar359",
+    },
+  ];
+
+  const Course = [
+    {
+      description: "DBMS",
+      imgUrl: dbms,
+    },
+    {
+      description: "Operating System",
+      imgUrl: OS,
+    },
+    {
+      description: "Coumputer Networks",
+      imgUrl: cn,
     },
   ];
 
