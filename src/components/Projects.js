@@ -1,6 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { CodingCard } from "./CodingCard";
-import { CourseCard } from "./CourseCard";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/calculator.png";
 import projImg2 from "../assets/img/website.png";
@@ -9,9 +8,6 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
 import hackerrank from "../assets/img/hackerrank.png";
-import dbms from "../assets/img/dbms.png";
-import cn from "../assets/img/computerNetworks.png";
-import OS from "../assets/img/OS.png";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
