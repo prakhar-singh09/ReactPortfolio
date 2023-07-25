@@ -3,7 +3,7 @@ import { CodingCard } from "./CodingCard";
 import { CourseCard } from "./CourseCard";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/calculator.png";
-import projImg2 from "../assets/img/website.png";
+import projImg2 from "../assets/img/Url_Shortener.png";
 import projImg6 from "../assets/img/github.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
@@ -25,9 +25,9 @@ export const Projects = () => {
       link: "https://github.com/intensifyprakhar/Calculator-Using-Java-",
     },
     {
-      description: "Portfolio Website Using HTML/CSS",
+      description: "URL Shortener Using MongoDB and ExpressJS",
       imgUrl: projImg2,
-      link: "https://intensifyprakharold.netlify.app/",
+      link: "https://url-shortener-service-2705.onrender.com/login",
 
     },
     {
