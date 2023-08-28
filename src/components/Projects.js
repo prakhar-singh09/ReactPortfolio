@@ -33,7 +33,7 @@ export const Projects = () => {
     {
       description: "More Projects",
       imgUrl: projImg6,
-      link: "https://github.com/intensifyprakhar",
+      link: "https://github.com/prakhar-singh09",
     },
   ];
 
@@ -48,7 +48,7 @@ export const Projects = () => {
     {
       description: "Leetcode",
       imgUrl: leetcode,
-      link: "https://leetcode.com/intensifyprakhar/",
+      link: "https://leetcode.com/prakhar-singh/",
     },
     {
       description: "HackerRank",
