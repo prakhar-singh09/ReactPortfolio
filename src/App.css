@@ -101,7 +101,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 20px;
+  padding: 4px 20px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -234,8 +234,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 200px 0 120px 0;
+  background: linear-gradient(to right, #000080, #780744);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -289,12 +289,8 @@ top: -10px;
 }
 .banner img {
   animation: updown 3s linear infinite;
-  border-radius: 1000%;
-  max-width: 480px;  
-height: auto;  
-left: 70px;
-position: relative;
-top: -80px;
+  border-radius: 50%;
+  max-width: 450px;
 }
 @keyframes updown {
     0% {
@@ -375,14 +371,15 @@ top: -80px;
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: max(55%, 300px);
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
+  white-space: nowrap;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;

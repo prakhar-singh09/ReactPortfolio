@@ -1,17 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { CodingCard } from "./CodingCard";
-import { CourseCard } from "./CourseCard";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/calculator.png";
-import projImg2 from "../assets/img/website.png";
+import projImg2 from "../assets/img/Url_Shortener.png";
 import projImg6 from "../assets/img/github.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
 import hackerrank from "../assets/img/hackerrank.png";
-import dbms from "../assets/img/dbms.png";
-import cn from "../assets/img/cn.png";
-import OS from "../assets/img/OS.png";
+
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -25,9 +22,9 @@ export const Projects = () => {
       link: "https://github.com/intensifyprakhar/Calculator-Using-Java-",
     },
     {
-      description: "Portfolio Website Using HTML/CSS",
+      description: "URL Shortener Using MongoDB and ExpressJS",
       imgUrl: projImg2,
-      link: "https://intensifyprakharold.netlify.app/",
+      link: "https://url-shortener-service-2705.onrender.com/login",
 
     },
     {
@@ -48,31 +45,12 @@ export const Projects = () => {
     {
       description: "Leetcode",
       imgUrl: leetcode,
-      link: "https://leetcode.com/intensifyprakhar/",
+      link: "https://leetcode.com/prakhar-singh/",
     },
     {
       description: "HackerRank",
       imgUrl: hackerrank,
       link: "https://www.hackerrank.com/singhprakhar359",
-    },
-  ];
-
-  const Course = [
-   
-    {
-      description: "DBMS",
-      imgUrl: dbms,
-    
-    },
-    {
-      description: "Operating System",
-      imgUrl: OS,
-    
-    },
-     {
-      description: "Coumputer Networks",
-      imgUrl: cn,
-      
     },
   ];
 
@@ -93,9 +71,6 @@ export const Projects = () => {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Coding Profiles</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Course Work</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -127,20 +102,6 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                    <Row>
-                        {
-                          Course.map((course, index) => {
-                            return (
-                              <CourseCard
-                                key={index}
-                                {...course}
-                                />
-                            )
-                          })
-                        }
-                      </Row>           
-                   </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
