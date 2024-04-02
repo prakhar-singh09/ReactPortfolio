@@ -2,8 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { CodingCard } from "./CodingCard";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/calculator.png";
-import projImg2 from "../assets/img/Url_Shortener.png";
-import projImg6 from "../assets/img/github.png";
+import projImg2 from "../assets/img/Devfolio.png";
+import projImg6 from "../assets/img/Notegen.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import leetcode from "../assets/img/leetcode.png";
 import CodeChef from "../assets/img/codechef.png";
@@ -16,22 +16,21 @@ export const Projects = () => {
 
   const projects = [
     {
-      
-      description: "Calculator Android App",
+      description: "NoteGen",
+      imgUrl: projImg6,
+      link: "https://notegen.vercel.app/",
+    },
+    {
+      description: "DevFolio",
+      imgUrl: projImg2,
+      link: "https://devmedia-app.vercel.app/",
+    },
+    {
+      description: "Calculator App",
       imgUrl: projImg1,
       link: "https://github.com/intensifyprakhar/Calculator-Using-Java-",
     },
-    {
-      description: "URL Shortener Using MongoDB and ExpressJS",
-      imgUrl: projImg2,
-      link: "https://url-shortener-service-2705.onrender.com/login",
-
-    },
-    {
-      description: "More Projects",
-      imgUrl: projImg6,
-      link: "https://github.com/prakhar-singh09",
-    },
+   
   ];
 
   
@@ -63,7 +62,8 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Portfolio</h2>
-                <p>I show you to all the big and small Skills I have done so far</p>
+                <p>Here is my work, I am Proficient in C++, Java, Python, JavaScript, and a range of technologies including ReactJS, MongoDB, NodeJS, ExpressJS, Git, Github, and SQL. Experienced in RESTful API development and cutting edge technologies like GenAI.
+</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

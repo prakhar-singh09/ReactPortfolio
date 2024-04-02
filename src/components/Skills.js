@@ -35,21 +35,33 @@ export const Skills = () => {
                         <h2>About Skills</h2>
                         <p>I am constantly exploring emerging technologies and various domains to broaden my skillset. I possess various abilities, including<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                        <div className="item">
-  <img src={meter1} alt="HTML" />
-  <h5>HTML</h5>
+  <div className="item">
+  <img src={meter2} alt="C++" />
+  <h5>C++</h5>
+  </div>
+  <div className="item">
+  <img src={meter2} alt="Java" />
+  <h5>Java</h5>
+  </div>
+ <div className="item">
+  <img src={meter2} alt="Python" />
+  <h5>Python</h5>
+</div>
+  <div className="item">
+  <img src={meter1} alt="ReactJS" />
+  <h5>ReactJS</h5>
 </div>
 <div className="item">
-  <img src={meter2} alt="CSS" />
-  <h5>CSS</h5>
+  <img src={meter2} alt="ExpressJS" />
+  <h5>ExpressJS</h5>
 </div>
 <div className="item">
   <img src={meter1} alt="JavaScript" />
   <h5>JavaScript</h5>
 </div>
 <div className="item">
-  <img src={meter1} alt="ReactJS" />
-  <h5>ReactJS</h5>
+  <img src={meter1} alt="MongoDB" />
+  <h5>MongoDB</h5>
 </div>
 <div className="item">
   <img src={meter1} alt="NodeJS" />
@@ -57,22 +69,16 @@ export const Skills = () => {
 </div>
 <div className="item">
   <img src={meter3} alt="Designing" />
-  <h5>Designing</h5>
+  <h5>Canva</h5>
 </div>
 <div className="item">
-  <img src={meter2} alt="Flutter" />
-  <h5>Flutter</h5>
+  <img src={meter2} alt="Git" />
+  <h5>Git</h5>
 </div>
 <div className="item">
-  <img src={meter1} alt="C++" />
-  <h5>C++</h5>
-</div>
-<div className="item">
-  <img src={meter2} alt="DSA" />
-  <h5>DSA</h5>
-</div>
-
-                          
+  <img src={meter1} alt="Github" />
+  <h5>Github</h5>
+</div>                          
                         </Carousel>
                     </div>
                 </div>

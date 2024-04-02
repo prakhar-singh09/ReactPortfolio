@@ -26,7 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5500/contact", {
+    let response = await fetch("https://reactportfolio-ksu2.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -34,6 +34,9 @@ export const Contact = () => {
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {

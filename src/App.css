@@ -374,7 +374,7 @@ top: -10px;
   width: max(55%, 300px);
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(22, 4, 58, 0.1);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -417,16 +417,12 @@ top: -10px;
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius:  15px;
   overflow: hidden;
   margin-bottom: 24px;
 }
@@ -472,7 +468,7 @@ top: -10px;
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0.8px;
 }
 
@@ -512,9 +508,9 @@ top: -10px;
 
 .code-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 73px;
 }
 
 .code-imgbx::before {
@@ -582,8 +578,9 @@ top: -10px;
 
 .code-imgbx a img {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
+  
 }
 
 .code-imgbx a .proj-txtx {
@@ -596,7 +593,7 @@ top: -10px;
 }
 .cor-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 15x;
   overflow: hidden;
   margin-bottom: 24px;
 }
@@ -730,7 +727,7 @@ top: -10px;
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 10px 0 0px 0;
   background-image: url('./assets/img/blue.png');
   background-position: center center;
   background-size: cover;

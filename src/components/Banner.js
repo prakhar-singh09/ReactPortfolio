@@ -4,6 +4,12 @@ import headerImg from "../assets/img/profile.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+
+import { HashLink } from 'react-router-hash-link';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,7 +19,7 @@ export const Banner = () => {
   const period = 1000;
 
   const tick = useCallback(() => {
-    const toRotate = ["Web Developer", "Android Developer", "Student"];
+    const toRotate = ["Software Developer", "Student"];
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -45,6 +51,7 @@ export const Banner = () => {
   }, [tick, delta]);
 
   return (
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
@@ -58,16 +65,18 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="500"
-                      data-rotate='["Android Developer", "Web Developer", "Student"]'
+                      data-rotate='["Software Developer", "Student"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Hi, I am Prakhar Singh. I'm a pre-final B.Tech student at the GL Bajaj Institute of Technology & Management.
-                    My area of skills are: Android development using Flutter, Website making using HTML, CSS, JavaScript, ReactJS, and Data Structures & Algorithms with a primary language as C++17.
+                  Hey there! I'm Prakhar Singh, a final year undergraduate student with a passion for engineering and software 
+                  development. My aim? To leave a positive mark on the world through technology.        
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <HashLink to='#connect'>
+                  <button> Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </HashLink>
                 </div>
               )}
             </TrackVisibility>
@@ -84,5 +93,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    </Router>
   );
 };

@@ -14,6 +14,7 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -27,15 +28,25 @@ export const NavBar = () => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
+  
+  const handleNavbarToggle = () => {
+    setIsNavbarCollapsed((prev) => !prev);
+  };
+
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar   expand="md"
+        className={`${scrolled ? "scrolled" : ""} ${
+          isNavbarCollapsed ? "blue" : ""
+        }`}
+        onToggle={handleNavbarToggle}
+      >
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />

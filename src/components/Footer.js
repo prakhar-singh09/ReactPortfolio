@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href="https://github.com/prakhar-singh09"><img src={navIcon4} alt="" /></a>
               <a href="https://twitter.com/intensifyprakha?t=c4glOsFVu_YbHXaOOiWPQw&s=09"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Made with love❤️ by Prakhar Singh</p>
+            <p>Made with love❤️ by Prakhar Singh ©2024</p>
           </Col>
         </Row>
       </Container>
