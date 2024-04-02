@@ -17,9 +17,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/intensifyprakhar/" ><img src={navIcon1} alt="Icon"  /></a>
-              <a href="https://instagram.com/intensifyprakhar"><img src={navIcon2} alt="Icon" /></a>
-              <a href="https://github.com/intensifyprakhar"><img src={navIcon4} alt="" /></a>
+              <a href="https://www.linkedin.com/in/prakhar-singh09/" ><img src={navIcon1} alt="Icon"  /></a>
+              <a href="https://instagram.com/prakhar___singh___"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://github.com/prakhar-singh09"><img src={navIcon4} alt="" /></a>
               <a href="https://twitter.com/intensifyprakha?t=c4glOsFVu_YbHXaOOiWPQw&s=09"><img src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Made with love❤️ by Prakhar Singh</p>

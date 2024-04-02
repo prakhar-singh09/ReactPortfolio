@@ -30,7 +30,7 @@ export const Projects = () => {
     {
       description: "More Projects",
       imgUrl: projImg6,
-      link: "https://github.com/intensifyprakhar",
+      link: "https://github.com/prakhar-singh09",
     },
   ];
 
