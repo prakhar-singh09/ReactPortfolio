@@ -60,7 +60,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated animate__fc:\Users\ASUS\OneDrive\Documents\Downloads\logo2.pngadeIn": ""}>
                 <h2>Portfolio</h2>
                 <p>Here is my work, I am Proficient in C++, Java, Python, JavaScript, and a range of technologies including ReactJS, MongoDB, NodeJS, ExpressJS, Git, Github, and SQL. Experienced in RESTful API development and cutting edge technologies like GenAI.
 </p>
